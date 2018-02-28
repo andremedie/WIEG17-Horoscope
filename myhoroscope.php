@@ -1,5 +1,6 @@
 <?php
 
+
 if(isset($_COOKIE['horoscope'])){	// Våra horoskop-cookies finns
 	// identifiera dessa värden
 	$namn = $_COOKIE['horoscope']['namn'];
@@ -11,5 +12,11 @@ else{ // Annars skickas tillbaka till index
 }
 
 include('Person.php');
+
+$person = new Person($namn ,$efternamn ,$personnummer );
+
+echo "Hej " . $person->namn . " " . $person->efternamn . "!<br>";
+echo "Ditt stjärntecken är: " . $person->horoskop . ".";
+
 
 ?>
