@@ -4,21 +4,19 @@
 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    print_r($_POST);
+    //print_r($_POST);
     
     if( $_POST["namn"] || $_POST["efternamn"] || $_POST["personnummer"])
     {
         $cookie_name = $_POST['namn'];
         $cookie_value = $_POST['efternamn'];
         $cookie_number = $_POST['personnummer'];
-    }
-    print_r($_COOKIE);
-        //if(isset)   
-         //header('Location: myhoroscope.php');
-    
         setcookie('horoscope[namn]', $cookie_name, time() + (86400 * 7), "/");
         setcookie('horoscope[efternamn]', $cookie_value, time() + (86400 * 7), "/");
         setcookie('horoscope[personnummer]',$cookie_number, time() + (86400 * 7), "/");
+   }
+   //print_r($_COOKIE);
+       
         
 
 }
