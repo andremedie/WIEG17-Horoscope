@@ -10,11 +10,19 @@ else{ // Annars skickas tillbaka till index
 	header('Location: index.php');
 }
 class Person{
+	
+	public $namn; 
+    public $efternamn; 
+    public $personnummer;
+	public $horoskop;
 
-    function __construct($cookie_name, $cookie_value, $cookie_number) {
-    $this->cookie_name = $cookie_name;
-    $this->cookie_value = $cookie_value;
-    $this->cookie_number = $cookie_number;
+    function __construct($namn, $efternamn, $personnummer) {
+		$this->namn = $namn;
+		$this->efternamn = $efternamn;
+		$this->personnummer = $personnummer;
+	
+		// kod för att identifiera vilket horoskop
 
     }
 }
+?>
