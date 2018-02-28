@@ -11,9 +11,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $cookie_name = $_POST['namn'];
         $cookie_value = $_POST['efternamn'];
         $cookie_number = $_POST['personnummer'];
-        $_COOKIE['namn'] = $cookie_name;
-        $_COOKIE['efternamn'] = $cookie_value;
-        $_COOKIE['personnummer'] = $cookie_number;
     }
     print_r($_COOKIE);
         //if(isset)   
