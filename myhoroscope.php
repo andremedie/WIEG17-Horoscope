@@ -10,5 +10,6 @@ else{ // Annars skickas tillbaka till index
 	header('Location: index.php');
 }
 
+include('Person.php');
 
 ?>
