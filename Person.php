@@ -12,11 +12,16 @@ class Person{
 		$this->personnummer = $personnummer;
 	
 		$this->horoskop = $this->identify_horoscope($personnummer);
-
     }
 	
 	function identify_horoscope($pnr){
 		
+		// olika typer av möjliga inskrivna personnummer
+		// $pnr1 = "199104259999"; 	 len 12 start 4 siffran
+		// $pnr2 = "9104259999"; 	 len 10 start 2 siffran
+		// $pnr3 = "19910425"; 		 len 8  start 4 siffran
+		// $pnr4 = "910425"; 		 len 6  start 2 siffran
+
 		if(strlen($pnr)%4 == 0){
 			$start = 4;
 		}

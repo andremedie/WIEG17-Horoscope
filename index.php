@@ -2,7 +2,6 @@
 
 // 86400 = 1 day
 
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     //print_r($_POST);
     
@@ -15,12 +14,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         setcookie('horoscope[efternamn]', $cookie_value, time() + (86400 * 7), "/");
         setcookie('horoscope[personnummer]',$cookie_number, time() + (86400 * 7), "/");
    }
-   //print_r($_COOKIE);
-       
-        
+   
+	//print_r($_COOKIE);
 
 }
-
 
 if(isset($_COOKIE['horoscope'])){	
 	header('Location: myhoroscope.php');
@@ -38,7 +35,3 @@ if(isset($_COOKIE['horoscope'])){
 </form>
 </body>
 </html>
-
-<?php
-
-?>

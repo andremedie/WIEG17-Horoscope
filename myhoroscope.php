@@ -18,5 +18,6 @@ $person = new Person($namn ,$efternamn ,$personnummer );
 echo "Hej " . $person->namn . " " . $person->efternamn . "!<br>";
 echo "Ditt stjärntecken är: " . $person->horoskop . ".";
 
-
 ?>
+
+<br><br><br><a href="clearcookies.php"> RENSA ALLA COOKIES </a>
