@@ -6,7 +6,7 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     //print_r($_POST);
     
-    if( $_POST["namn"] || $_POST["efternamn"] || $_POST["personnummer"])
+    if( $_POST['namn'] && $_POST['efternamn'] && $_POST['personnummer'])
     {
         $cookie_name = $_POST['namn'];
         $cookie_value = $_POST['efternamn'];
